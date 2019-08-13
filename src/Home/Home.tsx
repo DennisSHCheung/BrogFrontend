@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import './Home.css';
+import Blog from './Blog';
 
 interface IProps {
 	id: any,
@@ -28,7 +29,7 @@ export default class Home extends React.Component<IProps, {}> {
 	public render() {
 		return (
 			<div className="home-body">
-				<p> Welcome! {this.props.username} </p>
+				<Blog userid={this.props.id}  />
 			</div>
 		)
 

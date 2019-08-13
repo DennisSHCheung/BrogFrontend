@@ -32,7 +32,6 @@ export default class Header extends React.Component<IProps, IState> {
 			register: false,
 		}
 		this.onPress = this.onPress.bind(this);
-		// this.toggleRegister = this.toggleRegister.bind(this);
 		this.changeHandler = this.changeHandler.bind(this);
 	}
 
@@ -78,12 +77,6 @@ export default class Header extends React.Component<IProps, IState> {
 		})
 		
 	}
-
-	// public toggleRegister() {
-	// 	this.setState(prevState => ({
-	// 		register: !prevState.register
-	// 	}));
-	// }
 
 	public render() {
 

@@ -5,8 +5,11 @@
 	width: 100%;
 }
 
-.title-div {
+.register-title-div {
 	display: flex;
+	flex-direction: column;
+	height: 18%;
+	margin-bottom: 5%;
 }
 
 .p-div {

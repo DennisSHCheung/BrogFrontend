@@ -76,8 +76,9 @@ export default class Register extends React.Component<IProps, IState> {
 	public render() {
 		return (
 			<div className="register-div">
-				<div className="title-div">
-					<p style={{paddingLeft: "18.5%"}}>Register{"\n"}
+				<div className="register-title-div">
+					<p style={{paddingLeft: "18.5%"}}>Register now
+					<br />
 					Your stories will be shared around the world!
 					</p>
 				</div>
@@ -90,6 +91,7 @@ export default class Register extends React.Component<IProps, IState> {
 							name="email"
 							value={this.state.form.email.value}
 							onChange={this.changeHandler}
+							required={true}
 						/>
 					</div>
 					<div className="inner-div">
@@ -101,6 +103,7 @@ export default class Register extends React.Component<IProps, IState> {
 								value={this.state.form.username.value}
 								name="username"
 								onChange={this.changeHandler}
+								required={true}
 							/>
 						</div>
 						<div className="name-and-pw-div">
@@ -111,6 +114,7 @@ export default class Register extends React.Component<IProps, IState> {
 								name="password"
 								value={this.state.form.password.value}
 								onChange={this.changeHandler}
+								required={true}
 							/>
 						</div>
 					</div>
